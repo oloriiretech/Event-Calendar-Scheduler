@@ -363,3 +363,116 @@ input {
     visibility: visible;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .month h1 {
+        font-size: 2.5rem;
+    }
+
+    .month i {
+        font-size: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #submitBtn, #resetBtn {
+        padding: 8px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .days div {
+        width: calc(50rem / 7);
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .month {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .month i {
+        font-size: 1.8rem;
+    }
+
+    .month h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .weekdays {
+        height: auto;
+    }
+
+    .days div {
+        width: calc(45rem / 7);
+        font-size: 1rem;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    #submitBtn, #resetBtn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* For screens smaller than 480px (Mobile) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .month {
+        padding: 0.5rem;
+    }
+
+    .month i {
+        font-size: 1.5rem;
+    }
+
+    .month h1 {
+        font-size: 1.5rem;
+    }
+
+    .days div {
+        width: calc(35rem / 7);
+        font-size: 0.9rem;
+        height: 4rem;
+    }
+
+    input {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    #submitBtn, #resetBtn {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #rsvp {
+        width: 80px;
+        height: 200px;
+    }
+}
